@@ -26,8 +26,7 @@ client.on(Events.MessageCreate, async (message) => {
   );
   if (mention) {
     await message.reply(
-      "Don't worry high will be here soon, till staff will guide you.
-Open ticket for urgency"
+      "Don't worry high will be here soon, till staff will guide you.Open ticket for urgency"
     );
   }
 
