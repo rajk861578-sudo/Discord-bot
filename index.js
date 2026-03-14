@@ -26,14 +26,15 @@ client.on(Events.MessageCreate, async (message) => {
   );
   if (mention) {
     await message.reply(
-      "Don't worry high will be here soon, till staff guide you,mention @staff."
-    );
+      "Don't worry high will be here soon, till staff guide you."
+    )
+     await message.mention("staff");
   }
 
   // !faq command
   if (content === "!faq") {
     await message.reply(
-      "faq channel is made to help ppl with basic questions, it is updated regularly, ig you can find your problem here"
+      "faq channel is made to help ppl with basic questions, it is updated regularly, ig you can find your problem here. "
     );
     return;
   }
