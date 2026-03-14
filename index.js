@@ -26,15 +26,15 @@ client.on(Events.MessageCreate, async (message) => {
   );
   if (mention) {
     await message.reply(
-      "Don't worry high will be here soon, till staff guide you."
-    )
-     await message.mention("staff");
+      "Don't worry high will be here soon, till staff will guide you.
+Mention our staff team if it's urgent or open a ticket. "
+    );
   }
 
   // !faq command
   if (content === "!faq") {
     await message.reply(
-      "faq channel is made to help ppl with basic questions, it is updated regularly, ig you can find your problem here. "
+      "FAQ channel is made to help ppl with basic questions, it is updated regularly, ig you can find your problem here. "
     );
     return;
   }
@@ -47,7 +47,7 @@ client.on(Events.MessageCreate, async (message) => {
 
   // lag or problem in message
   if (content.includes("lag") || content.includes("problem")) {
-    await message.reply("open a ticket if facing any lag or problem");
+    await message.reply("Open a ticket if facing any lag or problem");
   }
 
   // faq keyword
@@ -60,7 +60,7 @@ client.on(Events.MessageCreate, async (message) => {
   // Welcome in support team
   if (content.includes("welcome in support team")) {
     await message.reply(
-      "don't forget to read Staff information and punishment rules"
+      "and don't forget to read Staff information and punishment rules, these are really important😉"
     );
   }
 });
